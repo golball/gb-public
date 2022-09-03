@@ -12,6 +12,7 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
 # Global config deployed on project subdir
 aws s3 cp apidoc/conf-admin s3://${AWS_S3_BUCKET}/${API_NAME}/conf-admin --recursive --region ${AWS_REGION}
+aws s3 cp apidoc/conf-users s3://${AWS_S3_BUCKET}/${API_NAME}/conf-users --recursive --region ${AWS_REGION}
 
 
 # Commons definitions deployed on commons subdirs
